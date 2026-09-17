@@ -1,0 +1,291 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   /*x*/
+    align-items: center;
+    background: url(../HTML/images.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+form{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(250, 249, 249, 0.285); */
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow:  0 0 10px  #a38154;
+}
+form h1{
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+form h1::first-letter{  
+    color: #a38154;
+    font-size: 100px;
+}
+form h1 sub{
+    color: #a38154;
+}
+.info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info input{
+    border: none;
+    border-bottom: 5px solid #a38154;
+    color: rgb(0, 0, 0);
+    width: 600px;
+    padding: 20px;
+    background-color: transparent;
+    margin: 10px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.info input::placeholder{
+    color: white;
+    text-transform: capitalize;
+}
+.info input:focus{
+    outline: none;
+    transform: scale(0.9);
+    border-bottom: solid 5px white ;
+    transition: 0.5s;
+}
+
+.info label{
+    visibility: hidden;
+}
+.log{
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.log label{
+    cursor: pointer;
+    color: white;
+}
+.log p{
+    color:#a38154;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.log p:hover{
+    color: white;
+    transition: 0.5s;
+    transform: scale(0.95);
+}
+button{
+    width: 50%;
+    padding: 10px;
+    color: black;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    letter-spacing: 4px;
+    margin: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: white;
+}
+button:hover{
+    color: black;
+    background-color: burlywood;
+    border: 3px solid black;
+    transition: 0.5s;
+    transform: scale(0.95);
+}
+#p{
+    margin: 10px;
+    font-size: 20px;
+    color: #a38154;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+form a{
+    color:white;
+    text-decoration: none;
+ transition: 0.5s;
+}
+form a:hover{
+   transform: scale(0.98);
+    transition: 0.5;
+    color: navajowhite;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 801px) and (max-width: 1150px) {
+
+
+body {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 80%;
+    max-width: 650px;
+    height: auto;
+    min-height: 650px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.info {
+    width: 100%;
+}
+
+.info input {
+    width: 85%;
+}
+
+
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 90%;
+    height: auto;
+    min-height: 600px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+form h1 {
+    font-size: 55px;
+    text-align: center;
+}
+
+.info {
+    width: 100%;
+}
+
+.info input {
+    width: 85%;
+    padding: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 70%;
+}
+
+#p {
+    text-align: center;
+    font-size: 17px;
+}
+
+
+}
+
+@media (max-width: 599px) {
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 95%;
+    height: auto;
+    min-height: 600px;
+    padding: 25px 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+form h1 {
+    font-size: 42px;
+    text-align: center;
+}
+
+form h1::first-letter {
+    font-size: 60px;
+}
+
+form h1 sub {
+    font-size: 0.7em;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info input {
+    width: 90%;
+    max-width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 90%;
+    padding: 15px;
+    font-size: 17px;
+}
+
+#p {
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+}
+

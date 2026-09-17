@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo1">
+            <p>i<sub>coffee</sub></p>
+        </div>
+
+        <ul>
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">spcecial offers</a></li>
+            <li><a href="#product"> products</a></li>
+            <li><a href="#">about us</a></li>
+        </ul>
+                <div class="profile">
+            <a href="#" id="btn">account</a>
+            <img src="cafe.jfif" alt="">
+        </div>
+  </nav>
+  <div class="menu" id="info">
+    <a href="login.html">login</a>
+    <a href="signup.html">signup</a>
+    <a href="#">setting</a>
+  </div>
+    <main>
+    <div class="hero">
+        <div class="since">
+        <h1>i<sub>coffee</sub></h1>
+        <pre>since 1988</pre>
+        </div>
+        <P>A Legacy of Exceptional Coffee
+Crafting unforgettable coffee experiences since 1899.
+ We carefully select the finest beans and roast them to perfection—bringing over a
+ century of passion and authenticity to every single cup. </P>
+    </div>
+    <div class="continer">
+        <div class="image">
+            <!-- <img src="../HTML/coffee.jfif" alt=""> -->
+        </div>
+        <div class="info">
+            <h2>fresh coffe , better mood</h2>
+            <p>your daily dose of premium coffee , made from freshly roasted beans delivered straight to your hands.</p>
+            <div class="btn">
+            <button> order now</button>
+            <button id="ex">explore pruducts</button>
+            </div>
+        </div>
+    </div>
+    <section id="product">
+    <div class="pruduct">
+    <div class="box">
+    <img src="product1.png" alt="">
+    <p class="des">black cafe</p>
+    <p>Celebrate the diverse flavors of the islands with this satisfying 
+    blend of tropical single-origin Indo-Pacific coffees.</p>
+    <div class="price">
+        <button>order now</button>
+          <span>45$ <sub>was:-<del>65</del></sub></span>
+    </div>
+    </div>
+    <div class="box">
+    <img src="product2.png" alt="">
+    <p class="des">spreco</p>
+    <p>Celebrate the diverse flavors of the islands with this satisfying 
+    blend of tropical single-origin Indo-Pacific coffees</p>
+    <div class="price">
+        <button>order now</button>
+        <span>45$ <sub>was:-<del>65</del></sub></span>
+    </div>
+    </div>
+    <div class="box">
+    <img src="product3.png" alt="" class="nec">
+    <p class="des">moca</p>
+    <p>Celebrate the diverse flavors of the islands with this satisfying 
+    blend of tropical single-origin Indo-Pacific coffees</p>
+    <div class="price">
+        <button>order now</button>
+        <span>45$ <sub>was:-<del>65</del></sub></span>
+    </div>
+    </div>
+    <div class="box">
+    <img src="product4.png"alt="" >
+    <p class="des">nescafe black</p>
+    <p>Celebrate the diverse flavors of the islands with this satisfying 
+    blend of tropical single-origin Indo-Pacific coffees</p>
+    <div class="price">
+        <button>order now</button>
+        <span>45$ <sub>was:-<del>65</del></sub></span>
+    </div>
+    </div>
+    <div class="box">
+    <img src="product5.png" alt="">
+    <p class="des">tiland cafe</p>
+    <p>Celebrate the diverse flavors of the islands with this satisfying 
+    blend of tropical single-origin Indo-Pacific coffees</p>
+    <div class="price">
+        <button>order now</button>
+        <span>45$ <sub>was:-<del>65</del></sub></span>
+    </div>
+    </div>
+    <div class="box">
+    <img src="product6.png" alt="">
+    <p class="des">brazilian cafe</p>
+    <p>Celebrate the diverse flavors of the islands with this satisfying 
+    blend of tropical single-origin Indo-Pacific coffees</p>
+    <div class="price">
+        <button>order now</button>
+        <span>45$<sub>was:-<del>65</del></sub></span>
+    </div>
+    </div>
+    </div>
+    <div class="list">
+        <p><</p>
+        <p id="active">1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>....</p>
+        <p>></p>
+    </div>
+    </section>
+    </main>
+    <footer>
+        <div class="logo">
+            <h3>i<sub>coffee</sub></h3>
+            <p>all right resaved @ icoffee.com</p>
+        </div>
+        <div class="links">
+            <ol>
+            <li>support</li>
+            <li>about us</li>
+            <li>location</li>
+            </ol>
+        </div>
+    </footer>
+    <script>
+let btn = document.getElementById("btn");
+console.log(btn);
+let info =  document.getElementById("info");
+console.log(info);
+
+btn.onclick = function(){
+    info.classList.toggle("active");
+};
+    </script>
+</body>
+</html>
